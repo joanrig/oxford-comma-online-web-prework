@@ -13,6 +13,7 @@ def oxford_comma(array)
     last = array.pop
     return array.join(", ") + " and #{array.pop}"
     binding.pry
+  end
 end
 
 # def oxford_comma(array)
