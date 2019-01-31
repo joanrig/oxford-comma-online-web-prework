@@ -2,15 +2,16 @@ require 'pry'
 
 def oxford_comma(array)
   if array.length == 1 
-    return array.join
+    return array.shift
   end
   
   if array.length == 2 
     return array.join(" and ")
   end
   
-  if array.length == 3
-    return array(2).join(", ")
+  if array.length > 2
+    last = array.pop
+    return array.join(", ") + " and #{array.pop}"
     binding.pry
 end
 
